@@ -1,0 +1,21 @@
+#ifndef sol_h
+#define sol_h
+
+#define SOL_COPYRIGHT SOL_RELEASE " Copyright (c) 2025-2026 breadleaf.github.io"
+#define SOL_AUTHORS   "Ava Hutchings"
+
+#define SOL_VERSION_MAJOR_N   0
+#define SOL_VERSION_MINOR_N   0
+#define SOL_VERSION_RELEASE_N 1
+
+#define SOL_INT_TO_STR_AUX(n) #n
+#define SOL_INT_TO_STR(n)     SOL_INT_TO_STR_AUX(n)
+
+#define SOL_VERSION_MAJOR   SOL_INT_TO_STR(SOL_VERSION_MAJOR_N)
+#define SOL_VERSION_MINOR   SOL_INT_TO_STR(SOL_VERSION_MINOR_N)
+#define SOL_VERSION_RELEASE SOL_INT_TO_STR(SOL_VERSION_RELEASE_N)
+
+#define SOL_VERSION "Sol " SOL_VERSION_MAJOR "." SOL_VERSION_MINOR
+#define SOL_RELEASE SOL_VERSION "." SOL_VERSION_RELEASE
+
+#endif // sol_h
